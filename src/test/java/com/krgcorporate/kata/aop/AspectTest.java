@@ -70,7 +70,7 @@ public class AspectTest {
 
     /**
      * Configure the com.krgcorporate.kata.aop.aspect.logging.LoggingAspect
-     *  in order to log a message after any methods that is in classes suffixed with 'Service'.
+     *  in order to log a message after any methods that is in beans suffixed with 'Service'.
      */
     @Test
     public void serviceMethodShouldBeLogged() {
@@ -84,7 +84,7 @@ public class AspectTest {
 
     /**
      * Configure the com.krgcorporate.kata.aop.aspect.logging.LoggingAspect
-     *  in order to log a message after any methods that result in throwing an exception in classes suffixed with 'Service'.
+     *  in order to log a message after any methods that result in throwing an exception in beans suffixed with 'Service'.
      * @throws IllegalStateException the expected exception.
      */
     @Test(expected = IllegalStateException.class)
@@ -98,7 +98,7 @@ public class AspectTest {
 
     /**
      * Configure the com.krgcorporate.kata.aop.aspect.caching.CacheableAspect
-     *  in order to evict the result of find method in classes suffixed by 'Repository'.
+     *  in order to evict the result of find method in beans suffixed by 'Repository'.
      */
     @Test
     public void repositorySaveMethodShouldEvictTheCache() {
@@ -108,7 +108,7 @@ public class AspectTest {
 
     /**
      * Configure the com.krgcorporate.kata.aop.aspect.caching.CacheableAspect
-     *  in order to cache the result of any findBy methods in classes suffixed by 'Repository'.
+     *  in order to cache the result of any findBy methods in beans suffixed by 'Repository'.
      */
     @Test
     public void repositoryFindMethodShouldBeCached() {
