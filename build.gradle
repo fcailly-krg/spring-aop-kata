@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.kragcorporate'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
+    compile 'org.springframework.boot:spring-boot-starter-aop:2.2.6.RELEASE'
+
+    compile group: 'org.mockito', name: 'mockito-core', version: '2.13.0'
+    testCompile('org.springframework.boot:spring-boot-starter-test:2.2.6.RELEASE')
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+}
